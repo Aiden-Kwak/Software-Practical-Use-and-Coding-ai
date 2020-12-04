@@ -8,7 +8,11 @@ Linear Regression, Logistic Regression. <br>
 만약 입력값이 추가되어 세개이상의 입력값을 다룬다면 시그모이드가 아니라 softmax function 써야한다.
 
 #1
-perceptron
+perceptron: 입력값과 활성화 함수를 사용해 출력값을 다음으로 넘기는 가장 작은 신경망 단위
+y=ax+b를 퍼셉트론에 맞춰 뭔가 딥러닝스럽게 표현해보면 a는 가중치(weight), b는 바이어스(bias), y는 입력값(x)와 가중치의 곱을 모두 더한다음 바이어스를 더한 값인 가중합(weighted sum)이다.<br>가중합의 결과를 놓고 1 또는 0을 출력해서 활성화함수(activation function)으로 보낸다. 대표적으로 시그모이드 함수
+* 퍼셉트론의 한계: XOR problem <br>
+XOR 문제를 해결하기 위해서 2개의 퍼셉트론을 한번에 계산할 수 있어야함.<br>
+이를 가능하게 하려면 은닉층(hidden layer)만들면 됨.
 
 #2
 Sequential 함수는 딥러닝의 구조를 한층 한층 쉽게 쌓아올릴 수 있게함.<br> Sequential 함수 선언 후 케라스의 model.add() 함수 사용해 필요한 층을 차례로 추가하면 됨.<br> 
