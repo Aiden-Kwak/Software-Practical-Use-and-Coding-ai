@@ -38,3 +38,6 @@ model.add() 안에는 Dense() 함수가 포함되어 있다. -> 각 층이 각�
 딥러닝의 구조와 층별 옵션을 정하고 나면 compile()함수를 이용해 이를 실행시킴.<br>
 * loss, optimizer, activation<br>
 블랙박스를 극복하려면?
+
+학습자료 참고: http://archive.ics.uci.edu
+<br> 머신러닝 공부할때 쓸만한 각종 데이터 
